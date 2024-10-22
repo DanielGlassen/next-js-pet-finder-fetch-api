@@ -1,0 +1,45 @@
+.loginForm {
+    @apply max-w-md mx-auto p-0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .loggedIn {
+        text-align: center;
+        margin-bottom: 20px;
+        p {
+            @apply text-lg font-semibold;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        .inputGroup {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                @apply mb-2 text-gray-dark;
+            }
+
+            .input {
+                @apply w-full py-3 px-4 border rounded-lg bg-transparent text-gray-dark;
+                @apply dark:bg-black-soft dark:text-white;
+
+                &:focus {
+                    @apply outline-none border-primary;
+                }
+            }
+        }
+
+        .error {
+            @apply text-red-600 mt-2;
+            text-align: center;
+        }
+    }
+}

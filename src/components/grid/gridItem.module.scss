@@ -1,0 +1,19 @@
+.grid__item {
+	@apply relative rounded-[20px] outline-none overflow-hidden w-full;
+
+	/* Set a fixed height for uniformity */
+	height: 210px; /* Set this to your desired fixed height */
+  
+	img {
+	  @apply rounded-[20px] transition-all w-full h-full object-cover; // Fill height and width
+	}
+  
+	&:hover img {
+	  @apply scale-105; // Scale image on hover
+	}
+  
+	&__title {
+	  @apply absolute invisible bottom-[-100px] right-2/4 translate-x-2/4 w-full text-center leading-8 text-primary bg-white rounded-[10px] transition-all gdark:bg-black;
+	  width: calc(100% - 16px);
+	}
+}
