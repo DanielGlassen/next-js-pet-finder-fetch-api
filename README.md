@@ -32,7 +32,7 @@ To get a local copy of the project up and running, follow these simple steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/my-app.git
+   git clone https://github.com/DanielGlassen/pet-finder-fetch-api.git
    cd my-app
    
 2. Install Dependencies:
